@@ -1,0 +1,135 @@
+version: '3'
+services:
+  user1:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: user1
+    hostname: user1
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=user1
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  user2:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: user2
+    hostname: user2
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=user2
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server1:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server1
+    hostname: server1
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server2:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server2
+    hostname: server2
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server3:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server3
+    hostname: server3
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server4:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server4
+    hostname: server4
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server5:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server5
+    hostname: server5
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server6:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server6
+    hostname: server6
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server7:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server7
+    hostname: server7
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+  server8:
+    image: lscr.io/linuxserver/openssh-server:latest
+    container_name: server8
+    hostname: server8
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - USER_NAME=keyscom
+    restart: unless-stopped
+    networks:
+      - keyscom-network
+networks:
+  keyscom-network:
+    external: true
