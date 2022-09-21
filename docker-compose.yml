@@ -8,7 +8,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=user1
     restart: unless-stopped
     networks:
@@ -21,7 +21,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=user2
     restart: unless-stopped
     networks:
@@ -34,7 +34,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -47,7 +47,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -60,7 +60,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -73,7 +73,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -86,7 +86,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -99,7 +99,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -112,7 +112,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
@@ -125,7 +125,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEsgxlbxtYAKfXjPicDPZgtpSD6Xvmw2Jw/tzmLR+4ZWxLcZ/Jdhuuqp/1/FBhdZicNxJnyJZfZvMXN+fXy+UkxnThjM+3hXmoStYIPoT1li88kAjew2j4lf4ctJ1nUEJbXQk1Cc/Hn1bpEfpRDU/th0HVW6gXMgaG5kIWNBulWZNYwg+mm4IMizSob0GmASdf+7ncgXzWdz1dmaoQhTZvVjNFMX4PuPwHYxQNviO0PvGOjM1ff7nhKyKJCwk1GP1LEv8R5U9C9nvBTs6KRWAEnjIEpK3nKOMguqfiMtR6S5vaZK02PKSvIrvzN1lQeKHA+laEShU3Qpb6eAwekqzqz6u+7ZvukTG7ybwylg353DuzzaurYzUhWJgaMDIen1hT1nv8POmAVW2SMwCD/lWxgZW03SdZDHsgoXgxg/EjaRUrX9ByXExUK6nmWTKCPigwd/LyHbrYN8wv5DKxNZLYVV2Id8PI8QYP2o91UzKKp9N51/AaCTKVpHx/7bV5HY8= bitsman@bitsman-Nitro-AN515-55
+      - PUBLIC_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsPQtQNIIfu8Wr5z59TEoSYCWVw+rloRaGN5x4yWlZSrqtveOnqMEeXitFV6mqLc6lbg4E2JHJnZ9Kw+pDbS5D75YA2F1tF6X6+GrC4BNtpGBAbuQmWxVIac8xrJHniwFdop2fWWjqWoxOPXxr36k7zby3DOg2pgLmDY9pnpaR4d+XMcGKPesGkzErvIo/cm9/qwj7pjI+My8+3k9a4Jq11OEZiFlO2wIb9YHTqltKbmdr5JhV9XaYq/H2H9HIO5OnuUb7REIr7oAGg8EyS9D/l9o6fkSSpcKVWJyAbo2+YNIyw9SQmbrxUyU1if8Kjhn9LN22tVb9/rq7z8DLCOJNfILjQLwQshjC1pO0cpkz5nbSGffKCObBui5ExRKb40OCIvx66JqXEnILrk7Iej9+1Kg1c0Zc4lUeeoK8feExOhn6gX1J6xS28gHLjTZQ82uWLS5oCW01+Ix4sN8xlM/EspH86jjQBFbrXrvLfvxs3dwH7dS1G9+g7MQ0j1r/8Hs= bitsman@MacBook-Air-de-Francisco.local
       - USER_NAME=keyscom
     restart: unless-stopped
     networks:
